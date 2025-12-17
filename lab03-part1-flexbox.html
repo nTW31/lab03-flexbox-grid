@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog - Flexbox Layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">🚀🚀 TechBlog</div>
+      <ul class="nav-links">
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#articles">บทความ</a></li>
+        <li><a href="#about">เกี่ยวกับ</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h1>ยินดีต้อนรับสู่ TechBlog</h1>
+      <p>บทความเทคโนโลยี และการเขียนโปรแกรมที่ทันสมัยและเป็ นประโยชน์</p>
+      <button class="hero-btn">อ่านบทความ</button>
+    </section>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-box">
+            <h3>📚📚 หมวดหมู่</h3>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">HTML & CSS</a></li>
+              <li><a href="#">React & Vue</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <h3>🔥🔥 ยอดนิยม</h3>
+            <ul>
+              <li><a href="#">Flexbox คืออะไร</a></li>
+              <li><a href="#">Grid Layout เบื้องต้น</a></li>
+              <li><a href="#">Responsive Design</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <h3>📬📬 ติดตาม</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </aside>
+        <!-- Articles -->
+        <main class="articles" id="articles">
+          <h2 style="margin-bottom: 1.5rem; color: #2c3e50">บทความล่าสุด</h2>
+          <div class="articles-grid">
+            <!-- Article 1 -->
+            <article class="article-card">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'
+width='400' height='200'%3E%3Crect fill='%23667eea' width='400' height='200'/%3E%3Ctext
+x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EFlexbox
+Guide%3C/text%3E%3C/svg%3E"
+                alt="Flexbox"
+                class="article-img"
+              />
+              <div class="article-content">
+                <span class="article-date">16 ธันวาคม 2025</span>
+                <h3 class="article-title">Flexbox: คู่มือฉบับสมบูรณ์</h3>
+                <p class="article-desc">
+                  เรียนรู้วิธีใช้ Flexbox
+                  ในการสร้างเลย์เอาต์ที่ยืดหยุ่นและตอบสนองต่อขนาดหน้าจอ
+                </p>
+                <a href="#" class="read-more">อ่านต่อ →</a>
+              </div>
+            </article>
+            <!-- Article 2 -->
+            <article class="article-card">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'
+width='400' height='200'%3E%3Crect fill='%23764ba2' width='400' height='200'/%3E%3Ctext
+x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3ECSs
+Grid%3C/text%3E%3C/svg%3E"
+                alt="Grid"
+                class="article-img"
+              />
+              <div class="article-content">
+                <span class="article-date">15 ธันวาคม 2025</span>
+                <h3 class="article-title">
+                  CSS Grid: การจัดเลย์เอาต์แบบสองมิติ
+                </h3>
+                <p class="article-desc">
+                  สํารวจพลังของ CSS Grid
+                  สําหรับการสร้างเลย์เอาต์ที่ซับซ้อนและตอบสนอง
+                </p>
+                <a href="#" class="read-more">อ่านต่อ →</a>
+              </div>
+            </article>
+            <!-- Article 3 -->
+            <article class="article-card">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'
+width='400' height='200'%3E%3Crect fill='%234a90e2' width='400' height='200'/%3E%3Ctext
+x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle'
+dy='.3em'%3EResponsive Design%3C/text%3E%3C/svg%3E"
+                alt="Responsive"
+                class="article-img"
+              />
+              <div class="article-content">
+                <span class="article-date">14 ธันวาคม 2025</span>
+                <h3 class="article-title">
+                  Responsive Design บนมือถือและเดสก์ท็อป
+                </h3>
+                <p class="article-desc">
+                  เทคนิคการทําให้เว็บไซต์ตอบสนองต่อขนาดหน้าจอที่แตกต่างกัน
+                </p>
+                <a href="#" class="read-more">อ่านต่อ →</a>
+              </div>
+            </article>
+            <!-- Article 4 -->
+            <article class="article-card">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'
+width='400' height='200'%3E%3Crect fill='%23f39c12' width='400' height='200'/%3E%3Ctext
+x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3ECSs
+Tips%3C/text%3E%3C/svg%3E"
+                alt="Tips"
+                class="article-img"
+              />
+              <div class="article-content">
+                <span class="article-date">13 ธันวาคม 2025</span>
+                <h3 class="article-title">เทคนิค CSS ที่ต้องรู้ในปี 2025</h3>
+                <p class="article-desc">
+                  รวมเทคนิค CSS ที่ทันสมัยและยอดนิยมสําหรับการพัฒนาเว็บ
+                </p>
+                <a href="#" class="read-more">อ่านต่อ →</a>
+              </div>
+            </article>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-section">
+        <h4>เกี่ยวกับ</h4>
+        <ul>
+          <li><a href="#">เกี่ยวกับเรา</a></li>
+          <li><a href="#">ประวัติ</a></li>
+          <li><a href="#">ทีมของเรา</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>หมวดหมู่</h4>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Tutorial</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>ติดต่อ</h4>
+        <ul>
+          <li><a href="#">Email: info@techblog.th</a></li>
+          <li><a href="#">Phone: +66-2-xxx-xxxx</a></li>
+          <li><a href="#">Bangkok, Thailand</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechBlog. สงวนลิขสิทธิ์</p>
+      </div>
+    </footer>
+  </body>
+</html>
